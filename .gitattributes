@@ -1,0 +1,8 @@
+*.py text eol=lf
+*.md text eol=lf
+*.toml text eol=lf
+*.json text eol=lf
+data/raw/*.csv -text
+*.pt binary
+*.pptx binary
+*.png binary

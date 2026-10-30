@@ -1,0 +1,44 @@
+{
+  "seed": 42,
+  "train_years": [
+    2011,
+    2012
+  ],
+  "validation_years": [
+    2013
+  ],
+  "train_count": 15039,
+  "validation_count": 7152,
+  "max_epochs": 120,
+  "patience": 20,
+  "batch_size": 256,
+  "weight_decay": 0.0001,
+  "selection_metric": "validation RMSE",
+  "trials": [
+    {
+      "learning_rate": 0.001,
+      "best_epoch": 32,
+      "epochs_run": 52,
+      "validation_rmse": 7.507307464089311,
+      "history_file": "history_trial_1.csv"
+    },
+    {
+      "learning_rate": 0.0003,
+      "best_epoch": 53,
+      "epochs_run": 73,
+      "validation_rmse": 7.61789508315006,
+      "history_file": "history_trial_2.csv"
+    }
+  ],
+  "selected_trial": {
+    "learning_rate": 0.001,
+    "best_epoch": 32,
+    "epochs_run": 52,
+    "validation_rmse": 7.507307464089311,
+    "history_file": "history_trial_1.csv"
+  },
+  "parameter_count": 865,
+  "seconds": 15.837416999998823,
+  "torch_version": "2.9.1+cpu",
+  "device": "cpu"
+}
